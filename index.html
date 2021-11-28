@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <title>
+        MY Family Book
+    </title>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px">
+            <h3 id="one">1. Our Family Book</h3>
+            <button type="button" onclick="family()">Next</button>
+        </center>
+
+        <hr>
+        <script>
+            var names=[
+                "2. My Father (Shiv Singh)",
+                "3. My Mother (Ragini Singh)",
+                "4. My Sister (Varnika Singh)",
+                "5. Me (Parthvi Singh)"
+            ];
+            var images=[
+                "papa.jpg",
+                "maa.jpg",
+                "varnika.jpg",
+                "me.jpg"
+            ];
+            var i=0;
+            function family(){
+                document.getElementById("one").innerHTML=names[i];
+                document.getElementById("family_member_image").src=images[i];
+                i++;
+                if(i==4){
+                    i=0;
+                }
+            }
+    
+        </script>
+    </body>
+</html>
